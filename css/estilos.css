@@ -811,3 +811,19 @@ main {
     flex: 1;
     max-width: 100%;
   }
+
+
+  /*footer*/
+  
+  .foo-copy{
+    background: #000000;
+    padding: 40px 0px;
+ }
+
+ .foo-copy p{
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: 300;
+ }
+

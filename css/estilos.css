@@ -379,7 +379,7 @@ img{
 .tabs-content .product-item .p-info h2 {
     font-size: 1.5em;
     font-weight: 700;
-    color: var(--clr);
+    color: #f67f00fd;
 }
 
 .tabs-content .product-item .p-info p {
@@ -391,7 +391,7 @@ img{
     top: 15px;
     display: inline-block;
     padding: 12px 25px;
-    background: var(--clr);
+    background: #f67f00fd;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
@@ -814,7 +814,7 @@ main {
 
 
   /*footer*/
-  
+
   .foo-copy{
     background: #000000;
     padding: 40px 0px;

@@ -69,3 +69,8 @@ Público: Personas que busquen nuevas alternativas para salir a comer solos o ac
 5. Seccion novedad y/o ultimas noticias.
 6. Opiniones de clientes
 
+### CONTACTO
+
+fernandoluisgarcia.dev@gmail.com
+jegaleano88@gmail.com
+nahuelzelaya89@gmail.com

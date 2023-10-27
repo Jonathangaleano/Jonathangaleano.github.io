@@ -764,3 +764,50 @@ button[type="submit"] {
     max-height: 100%;
     border-radius: 10px;
 }
+
+ /* Nosotros */
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .local-1 img,
+  .local-2 img,
+  .local-3 img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  
+  .local-1,
+  .local-2,
+  .local-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: 0 20px;
+  }
+  .local-1,
+  .local-2,
+  .local-3 > p, h2 {
+    color: #04A75B;
+  }
+  
+  .local-1, .local-2, .local-3 {
+    margin: 0 10px;
+  }
+  
+  
+  .local-3 {
+    flex: 1;
+    max-width: 100%;
+  }

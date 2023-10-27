@@ -729,6 +729,10 @@ button[type="submit"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card-container h2 {
+    color: #f67f00fd;
+}
+
 .card-inner {
     position: relative;
     width: 100%;
@@ -799,7 +803,7 @@ main {
   .local-1,
   .local-2,
   .local-3 > p, h2 {
-    color: #04A75B;
+    color: #000000;
   }
   
   .local-1, .local-2, .local-3 {

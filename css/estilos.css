@@ -730,7 +730,12 @@ button[type="submit"] {
 }
 
 .card h2 {
-    color: #f67f00fd;
+    color: #fffefcfd;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f67f00fd;
+
 }
 
 .card-inner {
@@ -751,7 +756,10 @@ button[type="submit"] {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: black;
+    background-image: url(../img/local.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: white;
     display: flex;
     justify-content: center;

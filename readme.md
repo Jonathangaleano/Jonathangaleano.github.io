@@ -15,6 +15,14 @@
 - falta definir footer
 
 
+## CORRECCION DEL TPO, 13/11/2023
+
+#### ANTE LA DEVOLUCION DEL TP SE PROCEDIO A REALIZAR LAS SIGUIENTES CORRECCIONES:
+
+- Se corrigio la pagina "contacto.html", la cual contenia dos etiquetas bodys.
+- Se corrigio la validacion de datos del formulario por JS, la cual no funcionaba de manera adecuada.
+- Se corrigio el envio del formulario
+
 ## ENTREGA DEL TPO, 27/10/2023
 
 ### DON BARRIGON

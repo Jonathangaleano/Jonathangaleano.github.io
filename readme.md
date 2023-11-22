@@ -86,3 +86,6 @@ nahuelzelaya89@gmail.com
 
 #### 14/11/23
 - Se trabajó sobre la semantica de los archivos html, agregando etiquetas main, header, footer, corrigiendo el uso excesivo de etiquetas "div".
+
+#### 22/11/23
+- Se eliminaron los "Required" del formulario. Se deja solo validacion por JS.

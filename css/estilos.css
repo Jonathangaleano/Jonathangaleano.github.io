@@ -910,16 +910,3 @@ main {
     background: var(--color-primary-hover);
   }
   
-  /* Estilos responsivos */
-  @media screen and (max-width: 1024px) {
-    .card {
-      width: 45%; /* Ajusta el ancho para dispositivos más pequeños */
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .card {
-      width: 100%; /* Ajusta el ancho para dispositivos móviles */
-    }
-  }
-  

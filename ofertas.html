@@ -121,7 +121,7 @@
                     </div>
                     <div class="burger-name">{{ producto.nombre }}</div>
                     <p>{{ producto.descripcion }}</p>
-                    <div class="price">{{ producto.precio }}</div>
+                    <div class="price">${{ producto.precio }}</div>
                     <div class="buton">
                       <button @click="addToCart(producto.id)">Pedir Ahora</button>
                     </div>

@@ -93,38 +93,38 @@ crossorigin="anonymous">
 
         <!--BORRAR SI SE ROMPE!-->
 
-    <div id="app" class="container">
-        <div class="header-title" data-aos="fade-up">
-          <h1>OFERTAS RELAMPAGO!</h1>
-        </div>
-  
-  
-        <div v-if="error">
-          <p>Lo sentimos, hay un error.</p>
-        </div>
-  
-        <div v-else>
-          <section v-if="cargando">
-            <div class="spinner-border"></div>
-            <p>Cargando...</p>
-          </section>
-  
-          <section v-else>
-            <div class="card-deck d-flex flex-row flex-wrap">
-              <div v-for="producto in productos" :key="producto.id" class="card">
-                <img :src="producto.imagen" class="card-img-top img-thumbnail" :alt="producto.nombre">
-                <div class="card-body">
-                  <h5 class="card-title">{{ producto.nombre }}</h5>
-                  <p class="card-text">Precio: {{ producto.precio }}</p>
-                  <p class="card-text">Stock: {{ producto.stock }}</p>
+        <div id="app" class="container">
+          <div class="header-title" data-aos="fade-up">
+            <h1>OFERTAS RELAMPAGO!</h1>
+          </div>
+        
+          <div v-if="error">
+            <p>Lo sentimos, hay un error.</p>
+          </div>
+        
+          <div v-else>
+            <section v-if="cargando">
+              <div class="spinner-border"></div>
+              <p>Cargando...</p>
+            </section>
+        
+            <section v-else>
+              <div class="card-deck d-flex flex-row flex-wrap">
+                <div v-for="producto in productos" :key="producto.id" class="card box1">
+                  <div class="photo">
+                    <img :src="producto.imagen" alt="Hamburguesa">
+                  </div>
+                  <div class="burger-name">{{ producto.nombre }}</div>
+                  <p>{{ producto.descripcion }}</p>
+                  <div class="price">{{ producto.precio }}</div>
+                  <div class="buton">
+                    <button @click="addToCart(producto.id)">Pedir Ahora</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
-
-      </section>
 
 
 

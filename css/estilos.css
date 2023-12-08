@@ -843,7 +843,14 @@ main {
 
  /*ESTOY CANSADO JEFE*/
 
- .box1 {
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box1 {
     margin: 30px;
     padding: 20px;
     width: 300px;

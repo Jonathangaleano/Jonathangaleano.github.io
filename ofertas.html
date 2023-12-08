@@ -93,39 +93,57 @@ crossorigin="anonymous">
 
         <!--BORRAR SI SE ROMPE!-->
 
-        <div id="app" class="container">
-          <div class="header-title" data-aos="fade-up">
-              <h1>OFERTAS RELAMPAGO!</h1>
-          </div>
-      
-          <div v-if="error">
-              <p>Lo sentimos, hay un error.</p>
-          </div>
-      
-          <div v-else>
-              <section v-if="cargando">
-                  <div class="spinner-border"></div>
-                  <p>Cargando...</p>
-              </section>
-      
-              <section v-else>
-                  <div class="grid-product">
-                      <div v-for="producto in productos" :key="producto.id" class="product-item">
-                          <div class="p-portada">
-                              <img :src="producto.imagen" alt="Hamburguesa">
-                          </div>
-                          <div class="p-info">
-                              <h2>{{ producto.nombre }}</h2>
-                              <p>$ {{ producto.precio }}</p>
-                              <p>{{ producto.descripcion }}</p>
-                              <button @click="addToCart(producto.id)">Pedir Ahora</button>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-          </div>
+    <div id="app" class="container">
+        <div class="header-title" data-aos="fade-up">
+          <h1>OFERTAS RELAMPAGO!</h1>
+        </div>
+  
+  
+        <div v-if="error">
+          <p>Lo sentimos, hay un error.</p>
+        </div>
+  
+        <div v-else>
+          <section v-if="cargando">
+            <div class="spinner-border"></div>
+            <p>Cargando...</p>
+          </section>
+  
+          <section v-else>
+            <div class="grid-product">
+              <div v-for="producto in productos" :key="prudcto.id" class="product-item">
+                <div class="p-portada">
+                  <img src="producto.imagen" alt="producto.nombre">               
+                </div> 
+                <div class="p-info">
+                  <h5>{{ producto.nombre }}</h5>
+                  <p>{{ prodcuto.descripcion }}</p>
+                  <p>${{ producto.precio }} </p>
+                  <a href="#">PEDILA YA</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="card-deck d-flex flex-row flex-wrap">
+              <div v-for="producto in productos" :key="producto.id" class="card">
+                <img :src="producto.imagen" class="card-img-top img-thumbnail" :alt="producto.nombre">
+                <div class="card-body">
+                  <h5 class="card-title">{{ producto.nombre }}</h5>
+                  <p class="card-text">Precio: {{ producto.precio }}</p>
+                  <p class="card-text">Stock: {{ producto.stock }}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-      
+
+      </section>
+
 
 
       <!-- redes -->

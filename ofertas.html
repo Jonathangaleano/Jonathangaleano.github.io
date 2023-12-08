@@ -91,43 +91,65 @@ crossorigin="anonymous">
 
       <section>
 
-        <!--BORRAR SI SE ROMPE!-->
 
-    <div id="app" class="container">
-        <div class="header-title" data-aos="fade-up">
-          <h1>OFERTAS RELAMPAGO!</h1>
-        </div>
-  
-  <div class="tabs-content">
-    <div v-if="error">
-      <p>Lo sentimos, hay un error.</p>
-    </div>
-    
-    <div v-else>
-      <section v-if="cargando">
-        <div class="spinner-border"></div>
-        <p>Cargando...</p>
-      </section>
-    
-      <section v-else>
-        <div class="grid-product">
-          <div v-for="producto in productos" :key="producto.id" class="product-item">
-            <div class="p-portada">
-              <img :src="producto.imagen" :alt="producto.nombre">               
-            </div> 
-            <div class="p-info">
-              <h5>{{ producto.nombre }}</h5>
-              <p>{{ producto.descripcion }}</p>
-              <p>${{ producto.precio }} </p>
-              <a href="#">PEDILA YA</a>
-            </div>
-          </div>
-        </div>
-      </section>
-  </div>
-
-
-      <!-- redes -->
+                <!-- MENU DON BARRIGON -->
+                <div class="hm-page-block bg-fondo">
+                
+                  <div class="container">
+                
+                    <div class="header-title" data-aos="fade-up">
+                      <h1>Productos populares</h1>
+                    </div>
+                
+                    <!-- TABS / diferentes menues-->
+                    <ul class="hm-tabs" data-aos="fade-up">
+                      <li class="hm-tab-link"> OFERTAS</li>
+                    </ul>
+                
+                
+                    <!-- HAMBURGUESAS -->
+                    <div class="tabs-content" data-aos="fade-up">
+                
+                
+                      <!--BORRAR SI SE ROMPE!-->
+                
+                      <div id="app" class="container">
+                        <div class="header-title" data-aos="fade-up">
+                          <h1>OFERTAS RELAMPAGO!</h1>
+                        </div>
+                
+                        <div class="tabs-content">
+                          <div v-if="error">
+                            <p>Lo sentimos, hay un error.</p>
+                          </div>
+                
+                          <div v-else>
+                            <section v-if="cargando">
+                              <div class="spinner-border"></div>
+                              <p>Cargando...</p>
+                            </section>
+                
+                            <section v-else>
+                              <div class="grid-product">
+                                <div v-for="producto in productos" :key="producto.id" class="product-item">
+                                  <div class="p-portada">
+                                    <img :src="producto.imagen" :alt="producto.nombre">
+                                  </div>
+                                  <div class="p-info">
+                                    <h5>{{ producto.nombre }}</h5>
+                                    <p>{{ producto.descripcion }}</p>
+                                    <p>${{ producto.precio }} </p>
+                                    <a href="#">PEDILA YA</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                          </div>
+                
+                
+                        </div>
+      
+  <!-- redes -->
 
       <section class="wrap-social-logos">
         <ul>
